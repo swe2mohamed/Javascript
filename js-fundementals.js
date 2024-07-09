@@ -62,10 +62,51 @@ switch (day) {
 // operator
 let a = 10;
 let b = 10;
-let c = a+b;
+let c = a + b;
+console.log("-");
 
 let n1 = 10;
 let n2 = "10";
 
-let isEqual = n1 == n2; // it is true becuse == "= = " compare a value 
-let isEqualWithType = n1 === n3; // it is false becuse === " = = =" is compare value and data type.
+let isEqual = n1 == n2; // it is true becuse == "= = " compare a value
+let isEqualWithType = n1 === n2; // it is false becuse === " = = =" is compare value and data type.
+console.log("-");
+
+// Functions
+// 1. Function Declaration
+
+function great_0() {
+  console.log("Hello Function Declaration_0");
+}
+great_0();
+
+function great_1(name) {
+  console.log("Hello " + name + " !");
+}
+great_1("Function Declaration_1");
+
+function addition(n1, n2) {
+  return n1 + n2;
+}
+
+console.log(addition(10, 20));
+
+//2. Function Expression
+
+const greatExpression = function (name) {
+  console.log("Hello " + name + " !");
+};
+greatExpression("Function Expression");
+
+// 3. Arrow Funciton
+const greetArrow = (name) => {
+  console.log("Hello " + name + " !");
+};
+greetArrow("Arrow Function");
+
+
+const _addition = (n1, n2) => {
+    const result = n1 + n2;
+    return result;
+};
+console.log(_addition(10,30));
