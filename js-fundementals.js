@@ -189,4 +189,22 @@ try{
     console.log("Final block has been executed");
 }
 
+// String operations
+let text = "Hello, World";
+console.log(text.length); // Outputs the length of the string
+console.log(text.toUpperCase()); // Converts the string to uppercase
+console.log(text.indexOf("World")); // Finds the position of the substring "World"
+console.log(text.slice(0, 5)); // Extracts a portion of the string from index 0 to 5
 
+// Date operations
+const currentDate = new Date(); // Creates a new Date object with the current date and time
+console.log(currentDate); // Outputs the current date and time
+console.log(currentDate.getFullYear()); // Outputs the current year
+console.log(currentDate.getMonth() + 1); // Outputs the current month (0-11, so +1 for a 1-12 range)
+console.log(currentDate.getSeconds()); // Outputs the current seconds
+
+// Outputs the date in Swedish locale format (YYYY-MM-DD)
+console.log(currentDate.toLocaleDateString("sv-SE")); 
+
+// Outputs the date in the default locale format
+console.log(currentDate.toLocaleDateString()); 
